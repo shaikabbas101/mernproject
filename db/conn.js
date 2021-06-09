@@ -8,5 +8,5 @@ mongoose.connect(DB,{
     useUnifiedTopology:true,
     useFindAndModify:false
 }).then(()=>{
-    console.log(`connection successful`);
+    console.log(`Connected to Database`);
 }).catch((err)=> console.log(`no connection`));

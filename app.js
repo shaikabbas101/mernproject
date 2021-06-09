@@ -10,11 +10,9 @@ require('./db/conn');
 
 app.use(express.json())
 
-app.use(require('./router/auth'))
-
 const PORT = process.env.PORT || 3005
 
-
+app.use(require('./router/auth'))
 
 
 // MiddleWare
